@@ -49,5 +49,5 @@ jobs:
           ci-user-token: ${{ secrets.CI_TOKEN }}
           ci-name: CI
           ci-inputs: >-
-            image=${{ secrets.USERNAME }}/flask-demo
+            image=${{ secrets.USERNAME }}/flask-demo-kcl-manifests
             sha-tag=${{ github.sha }}
