@@ -1,4 +1,4 @@
-name="flask-demo"
+name="flask_demo"
 tag="latest"
 
 image:

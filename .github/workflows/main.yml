@@ -36,18 +36,18 @@ jobs:
       - name: build image
         run: |
           make image
-          docker tag flask-demo:latest ${{ secrets.USERNAME }}/flask-demo:${{ github.sha }}
-          docker push ${{ secrets.USERNAME }}/flask-demo:${{ github.sha }}
+          docker tag flask_demo:latest ${{ secrets.USERNAME }}/flask_demo:${{ github.sha }}
+          docker push ${{ secrets.USERNAME }}/flask_demo:${{ github.sha }}
 
       - name: Trigger CI
         uses: InformaticsMatters/trigger-ci-action@1.0.1
         with:
-          ci-owner: pyfs
-          ci-repository: flask-demo-kustomize
+          ci-owner: kcl-lang
+          ci-repository: flask-demo-kcl-manifests
           ci-ref: refs/heads/master
-          ci-user: pyfs
+          ci-user: kcl-lang
           ci-user-token: ${{ secrets.CI_TOKEN }}
           ci-name: CI
           ci-inputs: >-
-            image=${{ secrets.USERNAME }}/flask-demo-kcl-manifests
+            image=${{ secrets.USERNAME }}/flask_demo-kcl-manifests
             sha-tag=${{ github.sha }}
