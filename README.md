@@ -1,4 +1,4 @@
-# Python Flask App Demo
+# Python Flask App Demo for GitOps
 
 ## CI Scripts
 
