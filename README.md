@@ -1,4 +1,6 @@
 # Python Flask App Demo for GitOps
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkcl-lang%2Fflask-demo.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkcl-lang%2Fflask-demo?ref=badge_shield)
+
 
 ## CI Scripts
 
@@ -59,3 +61,7 @@ jobs:
             image=${{ secrets.DOCKER_USERNAME }}/flask_demo
             sha-tag=${{ github.sha }}
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkcl-lang%2Fflask-demo.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkcl-lang%2Fflask-demo?ref=badge_large)
